@@ -218,7 +218,7 @@ int nibbleReverse(int x) {
  * Examples: bitFilter(0xFF00, 11, 4) = 0x0F00,
  * bitFilter(0x2A00, 13, 9) = 0x2A00,
  * bitFilter(0x1300, 4, 2) = 0
- * Assume 0 <= lowbit <= 30, and 0 <= highbit <= 30
+ * Assume 0 <= lowbit <= 31, and 0 <= highbit <= 31
  * If lowbit > highbit, then mask should be all 0's
  *   Legal ops: & | << >>
  *   Max ops: 20
