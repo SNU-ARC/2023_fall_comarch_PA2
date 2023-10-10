@@ -97,12 +97,12 @@ int test_bitFilter(int input, int highbit, int lowbit) {
 }
 int test_addAndDivideBy4(int x, int y)
 {
-    int sum32 = (x+y) & 0xffffffff;
-    long long sum = (long long)x+(long long)y;
-    if ((int)sum32 == sum)
+    int sum32 = (int)(((long long)x + (long long)y) & 0x00000000ffffffff);
+    long long sum = (long long)x + (long long)y;
+    if ((long long)sum32 == sum)
         return (x+y)/4;
     else
-        return x;
+ 	return x;
 }
 int test_numZerosFirst(int x) {
     unsigned count = 0;
