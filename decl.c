@@ -54,7 +54,7 @@ test_rec test_set[] = {
 {"nibbleReverse", (funct_t) nibbleReverse, (funct_t) test_nibbleReverse, 1, "! ~ & ^ | + << >>", 25, 1,
  {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},
  {"bitFilter", (funct_t) bitFilter, (funct_t) test_bitFilter, 3,
-    "& ^ << >>", 20, 1,
+    "& | << >>", 20, 1,
   {{TMin,TMax},{0, 31},{0,31}}},
  {"addAndDivideBy4", (funct_t) addAndDivideBy4, (funct_t) test_addAndDivideBy4, 2,
     "! ~ & ^ | + << >>", 20, 1,
